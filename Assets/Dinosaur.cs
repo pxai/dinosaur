@@ -13,7 +13,7 @@ public class Dinosaur : MonoBehaviour {
 	void Update () {
 		if (Input.GetKeyDown (KeyCode.Space)) {
 			Debug.Log ("Space was pressed");
-			this.rigidbody2D.velocity = Vector2.up * speed;
+			this.GetComponent<Rigidbody2D>().velocity = Vector2.up * speed;
 		}
 		this.transform.rotation = Quaternion.identity;
 	}

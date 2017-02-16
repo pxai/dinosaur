@@ -23,7 +23,7 @@ public class CactusController : MonoBehaviour {
 		float scale = Random.Range (2,4);
 		freshCactus.transform.localScale = new Vector3 (scale, scale, 0);
 		freshCactus.transform.position = new Vector3 (25f,1f);
-		freshCactus.rigidbody2D.velocity = Vector3.left * 5;
+		freshCactus.GetComponent<Rigidbody2D>().velocity = Vector3.left * 5;
 		
 	}
 }

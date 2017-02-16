@@ -23,7 +23,7 @@ public class CloudBehaviour : MonoBehaviour {
 		float scale = Random.Range (2,7);
 		freshCloud.transform.localScale = new Vector3 (scale, scale, 0);
 		freshCloud.transform.position = new Vector3 (25f,Random.Range(3,10f));
-		freshCloud.rigidbody2D.velocity = Vector3.left * (scale + 5);
+		freshCloud.GetComponent<Rigidbody2D>().velocity = Vector3.left * (scale + 5);
 
 	}
 }
